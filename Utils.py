@@ -5,8 +5,8 @@ from sklearn.svm import SVC
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 
 # Load the model and vectorizer
-loaded_model = pickle.load(open("spam_detector_model.pkl", "rb"))
-loaded_vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+loaded_model = pickle.load(open("voting_model.pkl", "rb"))
+loaded_vectorizer = pickle.load(open("tfid_2_vectorizer.pkl", "rb"))
 
 #preprocessing function
 def preprocess(text):
