@@ -1,5 +1,7 @@
 import streamlit as st
 import pickle
+import pandas as pd
+import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
@@ -7,6 +9,7 @@ import joblib
 import spacy
 import cloudpickle
 from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 # Load the model and vectorizer
 # Load the vectorizer
