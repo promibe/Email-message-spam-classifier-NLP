@@ -9,7 +9,7 @@ import spacy
 # Load the model and vectorizer
 # Load the vectorizer
 with open('tfid_2_vectorizer.joblib', 'rb') as f:
-    loaded_vectorizer = pickle.load(f)
+    loaded_vectorizer = joblib.load(f)
 
 # Load the model
 with open('voting_model.joblib', 'rb') as f:
