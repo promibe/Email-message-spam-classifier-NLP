@@ -4,6 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 import joblib
+import spacy
 
 # Load the model and vectorizer
 # Load the vectorizer
