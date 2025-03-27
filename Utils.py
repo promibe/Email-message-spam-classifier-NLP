@@ -8,7 +8,7 @@ import spacy
 
 # Load the model and vectorizer
 # Load the vectorizer
-with open('tfid_2_vectorizer.pkl', 'rb') as f:
+with open('tfid_2_vectorizer.joblib', 'rb') as f:
     loaded_vectorizer = pickle.load(f)
 
 # Load the model
