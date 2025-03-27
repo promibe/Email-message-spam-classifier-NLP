@@ -6,6 +6,7 @@ from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 from Utils import make_prediction, preprocess
 import joblib
 import spacy
+import cloudpickle
 
 # Create the Streamlit app UI
 st.title("📨 Spam Detector")
