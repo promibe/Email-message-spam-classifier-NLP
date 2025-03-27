@@ -6,6 +6,7 @@ from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 import joblib
 import spacy
 import cloudpickle
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load the model and vectorizer
 # Load the vectorizer
