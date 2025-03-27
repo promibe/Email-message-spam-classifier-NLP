@@ -5,11 +5,12 @@ from sklearn.svm import SVC
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 import joblib
 import spacy
+import cloudpickle
 
 # Load the model and vectorizer
 # Load the vectorizer
-with open('tfid_2_vectorizer.joblib', 'rb') as f:
-    loaded_vectorizer = joblib.load(f)
+with open("tfid_2_vectorizer.pkl", "rb") as f:
+    loaded_vectorizer = cloudpickle.load(f)
 
 # Load the model
 with open('voting_model.joblib', 'rb') as f:
