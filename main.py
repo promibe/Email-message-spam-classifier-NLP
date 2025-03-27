@@ -7,6 +7,7 @@ from Utils import make_prediction, preprocess
 import joblib
 import spacy
 import cloudpickle
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Create the Streamlit app UI
 st.title("📨 Spam Detector")
