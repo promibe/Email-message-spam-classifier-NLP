@@ -17,7 +17,6 @@ from sklearn.model_selection import train_test_split
 with open('voting_model.joblib', 'rb') as f:
     loaded_model = joblib.load(f)
 
-nlp = spacy.load('en_core_web_lg')
 
 # Data Cleaning Function
 def clean_data(filepath):
@@ -32,7 +31,7 @@ def clean_data(filepath):
 url = "https://raw.githubusercontent.com/promibe/Email-message-spam-classifier-NLP/main/spam.csv"
 df = clean_data(url)
 
-
+nlp = spacy.load('en_core_web_sm')
 #preprocessing function
 def preprocess(text):
     doc = nlp(text)
