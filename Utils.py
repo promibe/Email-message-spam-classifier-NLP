@@ -14,6 +14,9 @@ with open('tfid_2_vectorizer.pkl', 'rb') as f:
 with open('voting_model.joblib', 'rb') as f:
     loaded_model = joblib.load(f)
 
+#loading the nlp english model
+nlp = spacy.load('en_core_web_lg')
+
 #preprocessing function
 def preprocess(text):
     doc = nlp(text)
