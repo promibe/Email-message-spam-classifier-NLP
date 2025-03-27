@@ -16,7 +16,7 @@ with open('voting_model.joblib', 'rb') as f:
     loaded_model = joblib.load(f)
 
 #loading the nlp english model
-nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('en_core_web_sm')
 
 #preprocessing function
 def preprocess(text):
